@@ -1,0 +1,3 @@
+﻿  main.cpp
+D:\@New Study\@OpenGL\@Assimp\Skeletal Animation x64\Skeletal Animation x64\main.cpp(24,35): warning C4326: 'main'의 반환 형식이 'int'이어야 하는데 'void'입니다.
+  Skeletal Animation x64.vcxproj -> D:\@New Study\@OpenGL\@Assimp\Skeletal Animation x64\x64\Debug\Skeletal Animation x64.exe
