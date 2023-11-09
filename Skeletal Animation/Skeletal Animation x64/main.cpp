@@ -17,25 +17,27 @@ float curTime = 0.f;
 void Timer();
 void Mouse(int button, int state, int x, int y);
 void mouseMotion(int x, int y);
+void keyboard(unsigned char ch, int x, int y);
 
-SkeletalModel model("obj/model.dae");
+SkeletalModel model("obj/serena_rig_poses.fbx");
 
 
 void main(int argc, char *argv[]) {
 
 	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGBA | GLUT_DEPTH);
-	glutInitWindowPosition(50, 100);		// 윈도우의 초기 생성 위치, 왼쪽 상단
-	glutInitWindowSize(800, 600);			// 윈도우 사이즈
-	glutCreateWindow("Skeletal Animation");	// 윈도우 생성
+	glutInitWindowPosition(50, 100);		
+	glutInitWindowSize(800, 600);			
+	glutCreateWindow("Skeletal Animation");	
 	glutReshapeFunc(glReshape);
-	glutDisplayFunc(Display);				// 윈도우 안에 그릴 함수 지정
-	glutMouseFunc(Mouse);					// 마우스 콜백 함수
+	glutDisplayFunc(Display);				
+	glutMouseFunc(Mouse);					
 	glutMotionFunc(mouseMotion);
 	glutIdleFunc(Timer);
+	glutKeyboardFunc(keyboard);
 
-	glEnable(GL_DEPTH_TEST);				// 꼭 필요함 깊이 테스트를 Enable 해주어야 함!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-	glutMainLoop();							// 렌더링 루프
+	glEnable(GL_DEPTH_TEST);				
+	glutMainLoop();							
 
 }
 
@@ -71,8 +73,27 @@ void Display() {
 
 	glRotatef(_rotate_x, 1, 0, 0);
 	glRotatef(_rotate_y, 0, 0, 1);
+	glScalef(0.4f, 0.4f, 0.4f);
 	
+	GLfloat pos0[4] = { 0.0f, 10.0f, 1000.0f, 10.0f };			// 조명 위치
+	GLfloat ambient0[4] = { 0.8f, 0.8f, 0.8f, 0.8f };
+	GLfloat diffuse0[4] = { 0.5f, 0.5f, 0.5f, 0.5f };			// 분산광의 세기
+	GLfloat specular0[4] = { 1.0f, 1.0f, 1.0f, 1.0f };			// 반짝임 정도
+
+	glLightfv(GL_LIGHT0, GL_AMBIENT, ambient0);
+	glLightfv(GL_LIGHT0, GL_POSITION, pos0);
+	glLightfv(GL_LIGHT0, GL_DIFFUSE, diffuse0);
+	glLightfv(GL_LIGHT0, GL_SPECULAR, specular0);
+
+	glLightf(GL_LIGHT0, GL_SPOT_CUTOFF, 180.0f);
+	glLightf(GL_LIGHT0, GL_SPOT_EXPONENT, 0.0f);				// 빛 감쇄정도
+	
+
+
 	model.drawAnimation(curTime);
+	//model.drawSolid();
+	//model.drawSolidProc(skipDrawing);
+	//model.drawAnimationPoint(curTime);
 
 	glDisable(GL_LIGHT0);
 	glDisable(GL_LIGHTING);
@@ -127,7 +148,10 @@ void Mouse(int button, int state, int x, int y) {
 		//one = false;
 		break;
 	}
-
 	glutPostRedisplay();
 	// 변경된 _zoom 값과 _translate된 좌표값으로 Redisplay 실행
+}
+
+void keyboard(unsigned char ch, int x, int y) {
+
 }

@@ -1,3 +1,14 @@
-﻿  main.cpp
-D:\@New Study\@OpenGL\@Assimp\Skeletal Animation x64\Skeletal Animation x64\main.cpp(24,35): warning C4326: 'main'의 반환 형식이 'int'이어야 하는데 'void'입니다.
-  Skeletal Animation x64.vcxproj -> D:\@New Study\@OpenGL\@Assimp\Skeletal Animation x64\x64\Debug\Skeletal Animation x64.exe
+﻿  SkeletalModel.cpp
+D:\@포트폴리오\SkeletalAnimation\Skeletal Animation\Skeletal Animation x64\mesh.h(39,1): warning C4267: 'return': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\@포트폴리오\SkeletalAnimation\Skeletal Animation\Skeletal Animation x64\SkeletalModel.cpp(167,23): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\@포트폴리오\SkeletalAnimation\Skeletal Animation\Skeletal Animation x64\SkeletalModel.cpp(169,22): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\@포트폴리오\SkeletalAnimation\Skeletal Animation\Skeletal Animation x64\SkeletalModel.cpp(228,18): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\@포트폴리오\SkeletalAnimation\Skeletal Animation\Skeletal Animation x64\SkeletalModel.cpp(248,18): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\@포트폴리오\SkeletalAnimation\Skeletal Animation\Skeletal Animation x64\SkeletalModel.cpp(269,18): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  main.cpp
+D:\@포트폴리오\SkeletalAnimation\Skeletal Animation\Skeletal Animation x64\mesh.h(39,1): warning C4267: 'return': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\@포트폴리오\SkeletalAnimation\Skeletal Animation\Skeletal Animation x64\main.cpp(25,35): warning C4326: 'main'의 반환 형식이 'int'이어야 하는데 'void'입니다.
+  mesh.cpp
+D:\@포트폴리오\SkeletalAnimation\Skeletal Animation\Skeletal Animation x64\mesh.h(39,1): warning C4267: 'return': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  코드를 생성하고 있습니다...
+  Skeletal Animation x64.vcxproj -> D:\@포트폴리오\SkeletalAnimation\Skeletal Animation\x64\Debug\Skeletal Animation x64.exe

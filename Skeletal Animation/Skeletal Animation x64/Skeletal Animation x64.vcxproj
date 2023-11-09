@@ -21,11 +21,13 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Math3D.cpp" />
-    <ClCompile Include="SkeltalModel.cpp" />
+    <ClCompile Include="mesh.cpp" />
+    <ClCompile Include="SkeletalModel.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="defines.h" />
     <ClInclude Include="Math3D.h" />
+    <ClInclude Include="mesh.h" />
     <ClInclude Include="SkeletalModel.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
