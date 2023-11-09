@@ -3,10 +3,12 @@ OpenGL을 이용한 Skeletal Animation
 
 ### 개발 환경
 Windows 10, Visual Studio 2019, freeglut x64, Assimp 1.4.3
-Shader Language를 사용하지 않아 Vertex 변환 계산은 CPU가 수행함.
+</br>
+GLSL를 사용하지 않아 Vertex 변환 계산은 CPU가 수행함.
 
 ### 참조 사이트
-https://ogldev.org/www/tutorial38/tutorial38.html</br>
+https://ogldev.org/www/tutorial38/tutorial38.html
+</br>
 https://learnopengl.com/Model-Loading/Assimp
 
 ### 참조 소스
