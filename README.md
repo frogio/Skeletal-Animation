@@ -7,6 +7,7 @@ Shader Language를 사용하지 않아 Vertex 변환 계산은 CPU가 수행함.
 
 ### 참조 사이트
 https://ogldev.org/www/tutorial38/tutorial38.html
+
 https://learnopengl.com/Model-Loading/Assimp
 
 ### 참조 소스
